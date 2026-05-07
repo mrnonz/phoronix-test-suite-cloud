@@ -1,4 +1,4 @@
-# phoronix-test-suite
+# phoronix-test-suite-cloud
 This directory contains a Phoronix Test Suite run script. This can be used to benchmark server performance for various purposes, such as testing server specs, comparing cloud providers, testing impact of security softwares, etc.
 
 ## Usage
