@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v10.8.3-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>lmwn</Title>
+    <Version>1.0.0</Version>
+    <TestType>Other</TestType>
+    <Description>Select tests for POC</Description>
+    <Maintainer>lmwn</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>pts/build-linux-kernel-1.18.0</Test>
+    <Arguments>defconfig</Arguments>
+    <Description>Build: defconfig</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/openssl-4.0.0</Test>
+    <Arguments>rsa4096</Arguments>
+    <Description>Algorithm: RSA4096</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/mysqlslap-1.6.0</Test>
+    <Arguments>--concurrency=32</Arguments>
+    <Description>Clients: 32</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/valkey-1.1.1</Test>
+    <Arguments>-t set -c 50</Arguments>
+    <Description>Test: SET - Parallel Connections: 50</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/sqlite-2.3.0</Test>
+    <Arguments>1</Arguments>
+    <Description>Threads / Copies: 1</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/simdjson-2.2.0</Test>
+    <Arguments>partial_tweets</Arguments>
+    <Description>Throughput Test: PartialTweets</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>async_tree_io</Arguments>
+    <Description>Benchmark: async_tree_io</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>asyncio_tcp_ssl</Arguments>
+    <Description>Benchmark: asyncio_tcp_ssl</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>asyncio_websockets</Arguments>
+    <Description>Benchmark: asyncio_websockets</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>chaos</Arguments>
+    <Description>Benchmark: chaos</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>crypto_pyaes</Arguments>
+    <Description>Benchmark: crypto_pyaes</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>float</Arguments>
+    <Description>Benchmark: float</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>gc_collect</Arguments>
+    <Description>Benchmark: gc_collect</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>go</Arguments>
+    <Description>Benchmark: go</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>json_loads</Arguments>
+    <Description>Benchmark: json_loads</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>nbody</Arguments>
+    <Description>Benchmark: nbody</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>pathlib</Arguments>
+    <Description>Benchmark: pathlib</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>pickle_pure_python</Arguments>
+    <Description>Benchmark: pickle_pure_python</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>python_startup</Arguments>
+    <Description>Benchmark: python_startup</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>raytrace</Arguments>
+    <Description>Benchmark: raytrace</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>regex_compile</Arguments>
+    <Description>Benchmark: regex_compile</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pyperformance-1.1.0</Test>
+    <Arguments>xml_etree</Arguments>
+    <Description>Benchmark: xml_etree</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/nginx-3.1.0</Test>
+    <Arguments>-c 20</Arguments>
+    <Description>Connections: 20</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/clickhouse-1.4.0</Test>
+    <Description>ClickHouse OLAP benchmark (100M Rows Hits Dataset)</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/compress-zstd-1.6.0</Test>
+    <Arguments>-b3</Arguments>
+    <Description>Compression Level: 3</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/pgbench-1.17.0</Test>
+    <Arguments>-s 100 -c 800</Arguments>
+    <Description>Scaling Factor: 100 - Clients: 800 - Mode: Read Write</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/webp-1.4.0</Test>
+    <Arguments>-q 100</Arguments>
+    <Description>Encode Settings: Quality 100</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/go-benchmark-1.1.4</Test>
+    <Arguments>json</Arguments>
+    <Description>Benchmark: json</Description>
+  </Execute>
+</PhoronixTestSuite>
