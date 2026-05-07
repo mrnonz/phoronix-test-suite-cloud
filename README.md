@@ -7,12 +7,12 @@ This directory contains a Phoronix Test Suite run script. This can be used to be
 From this directory (where `docker-compose.yml` lives):
 
 ```
-docker-compose up -d
-docker-compose exec pts /phoronix-test-suite/phoronix-test-suite batch-run local/lmwn
-docker-compose exec pts /phoronix-test-suite/phoronix-test-suite result-file-to-csv "mytestresults"
+docker compose up -d
+docker compose exec pts /phoronix-test-suite/phoronix-test-suite batch-run local/lmwn
+docker compose exec pts /phoronix-test-suite/phoronix-test-suite result-file-to-csv "mytestresults"
 ```
 
-The argument to `result-file-to-csv` must match the saved results identifier. By default the compose file sets `TEST_RESULTS_NAME` to `mytestresults`; override it (for example in a `.env` file or `docker-compose exec -e TEST_RESULTS_NAME=mytestresults ...`) so it matches the name you pass to `result-file-to-csv`.
+The argument to `result-file-to-csv` must match the saved results identifier. By default the compose file sets `TEST_RESULTS_NAME` to `mytestresults`; override it (for example in a `.env` file or `docker compose exec -e TEST_RESULTS_NAME=mytestresults ...`) so it matches the name you pass to `result-file-to-csv`.
 
 * Currently there is no formatted output, so it might be a good idea to add `-v` to see test progress.
 * The benchmark is run using a prebuilt Docker image with benchmarks already installed (see [suite-definition.xml](phoronix-test-suite/data/custom-suites/lmwn/suite-definition.xml) for the full test suite definition used.)
