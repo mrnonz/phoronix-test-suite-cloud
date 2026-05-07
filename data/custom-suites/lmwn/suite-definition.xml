@@ -124,10 +124,6 @@
     <Description>Connections: 20</Description>
   </Execute>
   <Execute>
-    <Test>pts/clickhouse-1.4.0</Test>
-    <Description>ClickHouse OLAP benchmark (100M Rows Hits Dataset)</Description>
-  </Execute>
-  <Execute>
     <Test>pts/compress-zstd-1.6.0</Test>
     <Arguments>-b3</Arguments>
     <Description>Compression Level: 3</Description>
@@ -141,6 +137,11 @@
     <Test>pts/webp-1.4.0</Test>
     <Arguments>-q 100</Arguments>
     <Description>Encode Settings: Quality 100</Description>
+  </Execute>
+  <Execute>
+    <Test>pts/go-benchmark-1.1.4</Test>
+    <Arguments>http</Arguments>
+    <Description>Benchmark: http</Description>
   </Execute>
   <Execute>
     <Test>pts/go-benchmark-1.1.4</Test>
