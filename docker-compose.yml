@@ -1,13 +1,13 @@
 services:
   pts:
     container_name: pts
-    image: ghcr.io/wongnai/phoronix-test-suite-cloud:latest
+    image: ghcr.io/wongnai/phoronix-test-suite-cloud:latest-arm64
     pull_policy: always
     volumes:
       - ./data/custom-suites:/var/lib/phoronix-test-suite/test-suites/local/
       - ./data/output:${OUTPUT_DIR:-/var/lib/phoronix-test-suite/test-results/}
     environment:
-      - TEST_RESULTS_NAME=${TEST_RESULTS_NAME:-my_test_results}
+      - TEST_RESULTS_NAME=${TEST_RESULTS_NAME:-mytestresults}
       - OUTPUT_DIR=${OUTPUT_DIR:-/var/lib/phoronix-test-suite/test-results/}
     working_dir: /phoronix-test-suite
     # The 'shell' command keeps the container alive so you can exec into it
