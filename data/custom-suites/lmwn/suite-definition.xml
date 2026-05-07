@@ -20,13 +20,13 @@
   </Execute>
   <Execute>
     <Test>pts/mysqlslap-1.6.0</Test>
-    <Arguments>--concurrency=32</Arguments>
-    <Description>Clients: 32</Description>
+    <Arguments>--concurrency=512</Arguments>
+    <Description>Clients: 512</Description>
   </Execute>
   <Execute>
     <Test>pts/valkey-1.1.1</Test>
-    <Arguments>-t set -c 50</Arguments>
-    <Description>Test: SET - Parallel Connections: 50</Description>
+    <Arguments>-t set -c 800</Arguments>
+    <Description>Test: SET - Parallel Connections: 800</Description>
   </Execute>
   <Execute>
     <Test>pts/sqlite-2.3.0</Test>
