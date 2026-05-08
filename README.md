@@ -17,4 +17,4 @@ The argument to `result-file-to-csv` must match the saved results identifier. By
 * Currently there is no formatted output, so it might be a good idea to add `-v` to see test progress.
 * The benchmark is run using a prebuilt Docker image with benchmarks already installed (see [suite-definition.xml](data/custom-suites/lmwn/suite-definition.xml) for the full test suite definition used.)
 * The test can take several hours to complete. Estimated time by the tool is ~5 hours.
-* The result will be exported in CSV format using `phoronix-test-suite result-file-to-csv <test_results_name>` command which will write the file to the mounted directory `/data/phoronix-test-suite/output` of the host machine.
+* The result will be exported in CSV format using `phoronix-test-suite result-file-to-csv <test_results_name>` command which will write the file to the mounted directory `./data/output` on the host machine (relative to the directory containing `docker-compose.yml`).
