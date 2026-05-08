@@ -120,8 +120,8 @@
   </Execute>
   <Execute>
     <Test>pts/nginx-3.1.0</Test>
-    <Arguments>-c 20</Arguments>
-    <Description>Connections: 20</Description>
+    <Arguments>-c 200</Arguments>
+    <Description>Connections: 200</Description>
   </Execute>
   <Execute>
     <Test>pts/compress-zstd-1.6.0</Test>
