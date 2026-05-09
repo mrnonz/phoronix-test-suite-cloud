@@ -30,8 +30,8 @@
   </Execute>
   <Execute>
     <Test>pts/sqlite-2.3.0</Test>
-    <Arguments>1</Arguments>
-    <Description>Threads / Copies: 1</Description>
+    <Arguments>20</Arguments>
+    <Description>Threads / Copies: 20</Description>
   </Execute>
   <Execute>
     <Test>pts/simdjson-2.2.0</Test>
